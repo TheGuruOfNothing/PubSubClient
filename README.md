@@ -1,9 +1,17 @@
 # Arduino Client for MQTT
 
 This library provides a client for doing simple publish/subscribe messaging with
-a server that supports MQTT.
+a server that supports MQTT.This version is edited to add a way to add a prefix to the published message. See example directly below.
 
 ## Examples
+
+{
+mqttclient.publishprefixed(DEVICENAME, "Something", "is Now Online" );
+}
+
+This example assumes you have #define'd a variable named DEVICENAME and that variable will be added to 
+the actual message payload. This example will publish the following payload to the "Something" channel- "Banana is Now Online", assuming you have an electronic banana.
+Yes, I heard how that sounds.
 
 The library comes with a number of example sketches. See File > Examples > PubSubClient
 within the Arduino application.
