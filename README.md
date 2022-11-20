@@ -46,3 +46,4 @@ such as the Nanode or the Nuelectronics Ethernet Shield. For those, there is an
 ## License
 
 This code is released under the MIT License.
+# PubSubClient
